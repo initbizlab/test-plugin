@@ -1,0 +1,29 @@
+modelClass: October\Test\Models\Country
+title: 'Country list'
+noRecordsMessage: 'backend::lang.list.no_records'
+toolbar:
+    buttons: list_toolbar-buttons
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+
+columns:
+    google_button:
+        label: Action
+        type: partial
+        sortable: false
+        clickable: false
+        cssClass: column-button
+        valueFrom: id
+        width: 150px
+
+    name:
+        label: Name
+        searchable: true
+
+    code:
+        label: Code
+        searchable: true
+
+    is_active:
+        label: Active
+        type: switch

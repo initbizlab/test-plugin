@@ -82,4 +82,19 @@ class Plugin extends PluginBase
             ]
         ];
     }
+
+    public function registerComponents()
+    {
+        return [
+            'October\Test\Components\PersonCreate' => 'personCreate',
+            'October\Test\Components\PersonUpdate' => 'personUpdate',
+            'October\Test\Components\PersonPreview' => 'personPreview',
+            'October\Test\Components\PersonList' => 'personList',
+            'October\Test\Components\CountryCreate' => 'countryCreate',
+            'October\Test\Components\CountryUpdate' => 'countryUpdate',
+            'October\Test\Components\CountryPreview' => 'countryPreview',
+            'October\Test\Components\CountryList' => 'countryList',
+        ];
+
+    }
 }

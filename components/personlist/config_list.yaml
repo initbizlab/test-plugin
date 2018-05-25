@@ -1,0 +1,44 @@
+modelClass: October\Test\Models\Person
+title: 'Person list'
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showSetup: true
+noRecordsMessage: 'backend::lang.list.no_records'
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar-buttons
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    name:
+        label: Name
+        searchable: true
+
+    bio:
+        label: Bio
+        searchable: true
+
+    phone:
+        label: Phone
+        relation: phone
+        select: number
+
+    birth:
+        label: Born
+        type: timetense
+
+    birthdate:
+        label: Birth day
+        type: date
+
+    birthtime:
+        label: Birth time
+
+    created_at:
+        label: Created
+        type: timetense

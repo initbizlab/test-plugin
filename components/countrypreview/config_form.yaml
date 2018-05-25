@@ -1,0 +1,6 @@
+modelClass: October\Test\Models\Country
+
+form:
+    fields:
+        id:
+            label: 'Country ID'
