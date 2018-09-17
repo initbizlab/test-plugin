@@ -1,0 +1,22 @@
+modelClass: October\Test\Models\User
+title: 'User list'
+noRecordsMessage: 'backend::lang.list.no_records'
+toolbar:
+    buttons: list_toolbar-buttons
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    username:
+        label: Username
+        searchable: true
+
+    roles_count:
+        label: Roles
+        relation: roles_count
+        valueFrom: count
+        default: 0

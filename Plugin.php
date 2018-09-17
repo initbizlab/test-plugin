@@ -94,7 +94,9 @@ class Plugin extends PluginBase
             'October\Test\Components\CountryUpdate' => 'countryUpdate',
             'October\Test\Components\CountryPreview' => 'countryPreview',
             'October\Test\Components\CountryList' => 'countryList',
+            'October\Test\Components\UserCreate' => 'userCreate',
+            'October\Test\Components\UserUpdate' => 'userUpdate',
+            'October\Test\Components\UserList' => 'userList',
         ];
-
     }
 }
